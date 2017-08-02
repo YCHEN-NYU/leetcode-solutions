@@ -1,0 +1,4 @@
+Preorder: 8, 5, 9, 7, 1, 12, 2, 4, 11, 3 <parent, left, right>
+Inorder: 9, 5, 1, 7, 2, 12, 8, 4, 3, 11 <left, parent, right>
+PostOrder: <left, right, parent> 9, 1, 2, 12, 7, 5, 3, 11, 4, 8
+LevelOrder: <top, left, right> 8, 5, 4, 9, 7, 11, 1, 12, 3, 2

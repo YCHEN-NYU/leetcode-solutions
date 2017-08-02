@@ -9,11 +9,19 @@ void print(const int a[], int iLeft, int iRight);
 int main() {
    const int SIZE = 10;
    int a1[SIZE] = {1, 4, 5, 8, 12, 19, 24, 31, 43, 55}; // sorted
- 
+   cout << string(40, '=') << endl;
+   cout << "key = " << 8 << endl; 
    cout << binarySearch(a1, SIZE, 8) << endl;
+   cout << string(40, '=') << endl;
+   cout << "key = " << 12 << endl; 
    cout << binarySearch(a1, SIZE, 12) << endl;
+   cout << string(40, '=') << endl;
+   cout << "key = " << 24 << endl;
    cout << binarySearch(a1, SIZE, 24) << endl;
+   cout << string(40, '=') << endl;
+   cout << "key = " << 21 << endl; 
    cout << binarySearch(a1, SIZE, 21) << endl;
+   return 0;
 }
  
 // Search the array for the given key
@@ -37,10 +45,10 @@ int binarySearch(const int a[], int iLeft, int iRight, int key) {
       return mid;
    } else if (key < a[mid]) {
       // Recursively search the lower half
-      binarySearch(a, iLeft, mid - 1, key);
+      return binarySearch(a, iLeft, mid - 1, key);
    } else {
       // Recursively search the upper half
-      binarySearch(a, mid + 1, iRight, key);
+      return binarySearch(a, mid + 1, iRight, key);
    }
 }
  

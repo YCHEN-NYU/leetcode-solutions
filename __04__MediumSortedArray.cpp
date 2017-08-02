@@ -15,7 +15,7 @@ The median is (2 + 3)/2 = 2.5
 
 https://discuss.leetcode.com/topic/4996/share-my-o-log-min-m-n-solution-with-explanation
 */
-
+//  In statistics, the median is used for dividing a set into two equal length subsets, that one subset is always greater than the other. 
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) 
 {
 	int N1 = nums1.size();
